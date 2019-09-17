@@ -1,1 +1,105 @@
 
+
+<!DOCTYPE html>
+<html><head>
+<title>Home - Sri Venkateswara College of Engineering</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div>
+<header><h1><img src="svcelogo.jpg" width=150 height=150 align="left"></img></left>
+<br>Sri Venkateswara College Of Engineering<br>[Autonomous - Affiliated to Anna University]<br>Sriperumbudur Tk , Kancheepuram District<br>Tamil Nadu , India - 602 117<br><b>SVCE</b><br>Counselling Code:1219<br><br></h1></header>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="login.html">Login/SignUp</a>
+  <a href="cms.html">News</a>
+  <a href="associations.html">Associations</a>
+</div>
+<center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="svce1.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="svce2.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="svce3.jpg" style="width:60%">  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</center>
+
+<h2>At a Glance : SVCE</h2>
+SVCE is a unit of Sri Venkateswara Educational and Health Trust (SVEHT).The Trust was founded on 1 August 1984 at the behest and benign blessings of His Holiness Pujashree Kanchi Kamakoti Peedathipathi Sri Jayendra Saraswathi Swamigal. Dr. A. C. Muthiah, a renowned engineer, industrialist and philanthropist, is the Chairman of the Governing Council of the college. The college is in a 95 acre lush green Campus. It is housed in architecturally exquisite buildings with ample infrastructure such as classrooms, laboratories, libraries, sports arena, canteen, hostels, dispensary, bank etc., While the College supports the learning of the highest order through its quality infrastructure and eminent faculty, it also provides a wide scope for excellent development of personality of students through the effectively functional Associations meant for professional, co-curricular and extracurricular activities. Within a short period, this College has taken firm strides and has grown to be at the top of the table in India. The college celebrated its decennium on March 16, 1996 and its silver jubilee on Sep 29, 2010.  
+<h2>History of SVCE :</h2>
+<img src=" hist.jpg " alt=" description " style="float:left">The GRIHAPRAVESAM function of the new Campus was performed on 25.07.1991. The Campus houses a Vinayaka temple "SRI VIJAYA GANAPATHI ALAYAM". The new Campus was inaugurated on 5.12.1992 by the then President of India, His Excellency Shri R Venkataraman.<br><br>
+Twenty two batches of students have passed out of the College. Many of them have completed their Masters Degree. Several of our Alumni have completed PhD and work in prestigious US and Indian Universities. Many work in reputed companies like General Motors, Microsoft, CISCO, GEC, Infosys, TCS, CTS, HCL, TVS, Hindustan Motors, etc. A few are entrepreneurs.<br><br>
+The college celebrated its decennium on 16.03.1996 and then Honorable Minister of State for Commerce Shri P. Chidambaram presided over the function. The college conducted the Graduation Day for the first time on 10.01.2009 with the eminent scientist Dr. Mayilswamy Annadurai as the Guest of honour. Academic year 2009-10 was the Silver Jubilee Year of the College. The college conducted the second Graduation Day on 29.3.2010 with the eminent scientist Dr Thirumalachari Ramasami as the Guest of honour.
+
+<h2><center>VISION</center></h2>
+<marquee direction="right">To be a leader in Higher Technical Education and Research by providing the state of the art facilities to transform the learners into global contributors and achievers.</marquee>
+<h2><center>MISSION</center></h2>
+<marquee direction=>To develop SVCE as a " CENTRE OF EXCELLENCE " offering Engineering Education to men and women at undergraduate and postgraduate degree levels, bringing out their total personality, emphasizing ethical values and preparing them to meet the growing challenges of the industry and diverse societal needs of our nation</marquee>
+
+<h2> Quick Links</h2>
+<ul>
+<li><a href="https://www.svce.ac.in/admissions/admission.php">ADMISSION PROCEDURE</a></li> 
+<li><a href="https://www.svce.ac.in/departments/index.php">ACADEMICS</a></li>  
+<li><a href="https://www.svce.ac.in/place/recruit.php ">PLACEMENT RECRUITERS</a></li>
+</ul>
+
+<h2>Click below to know more about SVCE!</h2>
+<audio controls>
+ <source src="svceaudio.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<footer>Copyright © 2019 SVCE, Inc All rights reserved <u>Terms of Use</u>|<u>Private Policy - REVISED</u><br>Eswar Venkat(+91-9176525317)</footer>
+</div>
+</body>
+</html>
