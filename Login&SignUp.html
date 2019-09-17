@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<!-- Login -->
+
+<html>
+<head>
+	<title>Login</title>
+	<script type="text/javascript">
+	function a()
+    {
+      if(f.n.value=="")
+      {
+        alert("Name cant be empty,Please fill out this field!");
+        return false;
+      }
+      var regex = /^[a-zA-Z]+$/;
+      if(regex.test(f.n.value) == false)
+      {
+        alert("Invalid name");
+        return false;
+      }
+      if(f.p.value=="")
+      {
+        alert("Password cant be empty,Please fill out this field!");
+        return false;
+      }
+       var regex = /^[a-z0-9]+$/;
+      if(regex.test(f.p.value) == false)
+      {
+        alert("Invalid password");
+        return false;
+      }
+      return true;
+    }
+     
+
+  </script>
+
+</head>
+<body style="background-color:grey;">
+<center>
+	<form name=f>
+	<br><br>
+	<h1 style="font-family:Comic Sans MS";>Welcome Back Mr.X!</h1>
+<table border=25>
+<tr>
+<td>NAME</td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<td><input type="text" name=n></td>
+<br><br><br>
+</tr>
+<tr>
+<td>PASSWORD</td>
+<td><input type="password" name=p></td>
+</tr>
+<br><br><br><br>
+<tr>
+<td></td>
+<td><button type=submit onclick="return a();">SUBMIT</button>
+&nbsp&nbsp&nbsp&nbsp<button type=reset>RESET</button></td></tr>
+</form>
+</table>
+</center>
+<br><br><br><br>
+<center>
+New User?<a href="signup.html"><h1>SignUp</h1></a>
+</body>
+</html>
+
+
+<!-- Sign UP -->
+
+<html>
+<head>
+  <title>SignUp</title>
+  <script type="text/javascript">
+    function a()
+    {
+      if(f.n.value=="")
+      {
+        alert("Name cant be empty");
+        return false;
+      }
+      var regex = /^[a-zA-Z]+$/;
+      if(regex.test(f.n.value) == false)
+      {
+        alert("Invalid name");
+        return false;
+      }
+      if(f.e.value=="")
+      {
+        alert("Email cant be empty");
+        return false;
+      }
+      var regex = /^[a-zA-Z0-9]+@[a-z]{4,6}.[a-z]{2,4}+$/;
+      if(regex.test(f.e.value) == false)
+      {
+        alert("Invalid email");
+        return false;
+      }
+      if(f.p.value=="")
+      {
+        alert("Password cant be empty");
+        return false;
+      }
+      var regex = /^[a-z0-9]+$/;
+      if(regex.test(f.p.value) == false)
+      {
+        alert("Invalid password");
+        return false;
+      }
+      return true;
+    }
+
+  </script>
+
+  </head>
+
+
+<body bgcolor=yellow>
+<form action="" method=get name=f>
+<center>
+<h1 style="font-family:courier";>SignUP</h1>
+<table border=5>
+<tr>
+  <td>Name</td>
+  <td><input type="text" name=n></td>
+</tr>
+<tr>
+  <td>Mail ID</td>
+  <td><input type="email" name=e></td>
+</tr>
+<tr>
+  <td>Password</td>
+  <td><input type="password" name=p></td>
+</tr>
+<tr>
+  <td>Gender</td>
+  <td><input type="radio"name=g value="1">Male
+  <input type="radio" name=g value="2">Female</td>
+</tr>
+<br>
+<tr>
+  <td>Date</td>
+  <td><select name="date">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      </select>
+      <select name="month">
+      <option>Jan</option>
+      <option>Feb</option>
+      <option>March</option>
+      <option>April</option>
+      <option>May</option></select>
+      <select name="year">
+      <option>1999</option>
+      <option>2000</option>
+      <option>2001</option>
+      <option>2002</option>
+      <option>2003</option></select>
+    </td>
+</tr>
+<br>
+<tr>
+  <td>Qualification</td>
+  <td><input type="checkbox" name=c>SSLC
+						
+      <input type="checkbox" name=c>HSLC
+      <input type="checkbox" name=c>BE
+      <input type="checkbox" name=c>ME
+      <input type="checkbox" name=c>PHD</td>
+</tr>
+<tr>
+  <td>Address</td>
+  <td><textarea rows=5 columns=30 name=ad></textarea>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><button type="submit" onclick="return a();">Submit</button><button type=reset>Reset</button></td></tr>
+</table>
+</center>
+</form>
+<center>
+  <br>
+Already have an account? 	
+<a href="login.html">Login</a>
+</body></html>
+
+
+
+
