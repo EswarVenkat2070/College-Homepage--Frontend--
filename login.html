@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<script type="text/javascript">
+	function a()
+    {
+      if(f.n.value=="")
+      {
+        alert("Name cant be empty,Please fill out this field!");
+        return false;
+      }
+      var regex = /^[a-zA-Z]+$/;
+      if(regex.test(f.n.value) == false)
+      {
+        alert("Invalid name");
+        return false;
+      }
+      if(f.p.value=="")
+      {
+        alert("Password cant be empty,Please fill out this field!");
+        return false;
+      }
+       var regex = /^[a-z0-9]+$/;
+      if(regex.test(f.p.value) == false)
+      {
+        alert("Invalid password");
+        return false;
+      }
+      return true;
+    }
+     
+
+  </script>
+
+</head>
+<body style="background-color:grey;">
+<center>
+	<form name=f>
+	<br><br>
+	<h1 style="font-family:Comic Sans MS";>Welcome Back Mr.X!</h1>
+<table border=25>
+<tr>
+<td>NAME</td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<td><input type="text" name=n></td>
+<br><br><br>
+</tr>
+<tr>
+<td>PASSWORD</td>
+<td><input type="password" name=p></td>
+</tr>
+<br><br><br><br>
+<tr>
+<td></td>
+<td><button type=submit onclick="return a();">SUBMIT</button>
+&nbsp&nbsp&nbsp&nbsp<button type=reset>RESET</button></td></tr>
+</form>
+</table>
+</center>
+<br><br><br><br>
+<center>
+New User?<a href="signup.html"><h1>SignUp</h1></a>
+</body>
+</html>
